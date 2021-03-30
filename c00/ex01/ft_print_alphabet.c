@@ -5,14 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kka <kka@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/30 18:30:32 by kka               #+#    #+#             */
-/*   Updated: 2021/03/30 18:34:39 by kka              ###   ########.fr       */
+/*   Created: 2021/03/30 17:16:50 by kka               #+#    #+#             */
+/*   Updated: 2021/03/30 18:16:42 by kka              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_print_alphabet(void)
 {
-	write(1, &c, 1);
+	char a = 'a';
+	char z = 'z';
+
+	while(a <= z)
+	{
+		write(1, &a, 1);
+		a++;
+	}
 }
